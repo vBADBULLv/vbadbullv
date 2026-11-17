@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140230"/><stop offset=".35" stop-color="#3a0a68"/>
+      <stop offset=".58" stop-color="#ff3f9a"/><stop offset=".66" stop-color="#ff9a52"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe58a"/><stop offset=".45" stop-color="#ffb35c"/><stop offset="1" stop-color="#ff3f9a"/>
+    </linearGradient>
+    <clipPath id="tile"><rect width="1024" height="1024" rx="224"/></clipPath>
+    <clipPath id="above"><rect width="1024" height="672"/></clipPath>
+    <mask id="stripes">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <g fill="#000"><rect y="470" width="1024" height="14"/><rect y="520" width="1024" height="20"/>
+        <rect y="574" width="1024" height="26"/><rect y="630" width="1024" height="32"/></g>
+    </mask>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="1024" height="672" fill="url(#sky)"/>
+    <g clip-path="url(#above)"><circle cx="512" cy="560" r="300" fill="url(#sun)" mask="url(#stripes)"/></g>
+    <rect y="672" width="1024" height="352" fill="#14012e"/>
+    <g stroke="#2ef2e2" stroke-width="6" opacity=".9">
+      <line x1="0" y1="700" x2="1024" y2="700"/><line x1="0" y1="745" x2="1024" y2="745"/>
+      <line x1="0" y1="805" x2="1024" y2="805"/><line x1="0" y1="885" x2="1024" y2="885"/><line x1="0" y1="990" x2="1024" y2="990"/>
+    </g>
+    <g stroke="#ff2fa8" stroke-width="6" opacity=".9">
+      <line x1="512" y1="672" x2="512" y2="1024"/><line x1="512" y1="672" x2="300" y2="1024"/><line x1="512" y1="672" x2="724" y2="1024"/>
+      <line x1="512" y1="672" x2="60" y2="1024"/><line x1="512" y1="672" x2="964" y2="1024"/>
+      <line x1="512" y1="672" x2="-200" y2="1024"/><line x1="512" y1="672" x2="1224" y2="1024"/>
+    </g>
+    <rect y="666" width="1024" height="8" fill="#ff2fa8"/>
+    <!-- Palme -->
+    <g transform="translate(560 140) scale(1.25)" fill="#16022f">
+      <path d="M136 600 C 139 470 150 330 182 184 L 197 188 C 168 332 161 470 166 600 Z"/>
+      <path d="M189 180 C 140 150 80 160 26 232 C 85 182 140 176 189 194 Z"/>
+      <path d="M189 180 C 150 118 100 98 46 110 C 110 120 150 146 186 192 Z"/>
+      <path d="M189 180 C 176 118 160 78 118 38 C 170 80 190 130 195 184 Z"/>
+      <path d="M189 180 C 212 118 242 80 292 70 C 240 100 216 142 199 188 Z"/>
+      <path d="M189 180 C 240 160 282 190 300 262 C 270 206 230 190 192 194 Z"/>
+      <path d="M189 182 C 222 210 242 262 236 322 C 226 266 206 226 186 194 Z"/>
+      <path d="M189 182 C 154 210 130 262 134 322 C 146 266 166 226 194 194 Z"/>
+      <circle cx="180" cy="196" r="9"/><circle cx="197" cy="199" r="9"/><circle cx="189" cy="208" r="8"/>
+    </g>
+  </g>
+</svg>

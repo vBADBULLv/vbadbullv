@@ -1,0 +1,8 @@
+# Niemals Geheimnisse in dieses öffentliche Repository!
+client_secret*.json
+token*.json
+*.pem
+*.key
+.env
+__pycache__/
+_preview/

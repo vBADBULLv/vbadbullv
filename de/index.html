@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vBADBULLv – Clip-Uploader für meine eigenen Gameplay-Kanäle</title>
+<meta name="description" content="vBADBULLv ist ein privates Tool, das meine eigenen Gameplay-Clips auf meine eigenen YouTube-, TikTok-, Instagram- und Twitch-Konten hochlädt.">
+<link rel="canonical" href="https://vbadbullv.github.io/vbadbullv/de/">
+<link rel="alternate" hreflang="en" href="https://vbadbullv.github.io/vbadbullv/">
+<link rel="alternate" hreflang="de" href="https://vbadbullv.github.io/vbadbullv/de/">
+<link rel="alternate" hreflang="x-default" href="https://vbadbullv.github.io/vbadbullv/">
+<meta property="og:title" content="vBADBULLv – Clip-Uploader für meine eigenen Gameplay-Kanäle">
+<meta property="og:description" content="vBADBULLv ist ein privates Tool, das meine eigenen Gameplay-Clips auf meine eigenen YouTube-, TikTok-, Instagram- und Twitch-Konten hochlädt.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vbadbullv.github.io/vbadbullv/de/">
+<meta property="og:image" content="https://vbadbullv.github.io/vbadbullv/assets/icon-1024.png">
+<meta name="theme-color" content="#0f0224">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon-1024.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="scene" aria-hidden="true">
+  <div class="stars"></div><div class="sun"></div><div class="floor"></div><div class="horizon"></div>
+  <img class="palm l1" src="../assets/palm.svg" alt=""><img class="palm l2" src="../assets/palm.svg" alt="">
+  <img class="palm r1" src="../assets/palm.svg" alt=""><img class="palm r2" src="../assets/palm.svg" alt="">
+</div>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="../de/"><span>v</span>BADBULL<span>v</span></a>
+    <nav class="site-nav" aria-label="Main"><ul><li><a href="../de/" aria-current="page">Start</a></li><li><a href="../de/datenschutz.html">Datenschutz</a></li><li><a href="../de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li><li><a href="../de/datenloeschung.html">Datenlöschung</a></li><li><a href="../de/kontakt.html">Kontakt</a></li><li><a class="lang" href="../" hreflang="en" lang="en" title="English">EN</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <h1><span>v</span>BADBULL<span>v</span></h1>
+  <p class="tag">Clip-Uploader für meine eigenen Gameplay-Kanäle</p>
+  <p class="lead">vBADBULLv ist ein kleines, privates Desktop-Tool. Es lädt Gameplay-Clips, die ich selbst aufgenommen
+  habe, mit Titel, Beschreibung, Tags und Sichtbarkeit auf <strong>meine eigenen</strong> Kanäle und Konten hoch –
+  über die offizielle API und die offizielle Anmeldung der jeweiligen Plattform.</p>
+  <div class="buttons">
+    <a class="btn btn-pink" href="../de/datenschutz.html">Datenschutzerklärung</a>
+    <a class="btn btn-ghost" href="../de/nutzungsbedingungen.html">Nutzungsbedingungen</a>
+    <a class="btn btn-ghost" href="../de/datenloeschung.html">Datenlöschung</a>
+  </div>
+</section>
+
+<section class="card" id="about">
+  <h2>Was ist vBADBULLv?</h2>
+  <p>vBADBULLv ist der Name meiner Creator-Kanäle und der kleinen App, mit der ich dort veröffentliche. Die App läuft
+  lokal auf meinem eigenen Computer. Sie ist <strong>kein</strong> öffentlicher Dienst: keine Registrierung, keine
+  Benutzerkonten, kein Server, keine Datenbank. Nur ich als Betreiber nutze sie, um meine eigenen Inhalte auf meine
+  eigenen Konten hochzuladen.</p>
+  <ul class="check">
+    <li>Lädt von mir ausgewählte Videodateien mit dem Titel, der Beschreibung, den Tags und der Sichtbarkeit hoch, die ich festlege (Standard: <em>privat</em>).</li>
+    <li>Anmeldung ausschließlich über die offizielle Login-Seite der Plattform (OAuth) – die App sieht nie ein Passwort.</li>
+    <li>Liest keine Kommentare, Nachrichten, Follower, Statistiken oder Daten anderer Personen.</li>
+    <li>Keine Werbung, kein Tracking, kein Verkauf und keine Weitergabe von Daten.</li>
+  </ul>
+</section>
+
+<section class="card" id="how">
+  <h2>So funktioniert es</h2>
+  <ol class="steps">
+    <li><strong>Aufnehmen</strong><br>Ich nehme einen Gameplay-Clip auf meinem PC auf.</li>
+    <li><strong>Beschreiben</strong><br>Ich starte das Tool und gebe Titel, Beschreibung, Tags und Sichtbarkeit ein.</li>
+    <li><strong>Einmal anmelden</strong><br>Die offizielle Anmeldung der Plattform öffnet sich im Browser. Der Zugriffstoken wird nur auf meinem Computer gespeichert.</li>
+    <li><strong>Hochladen</strong><br>Das Tool sendet das Video direkt an die offizielle API der Plattform – sonst nirgendwohin.</li>
+  </ol>
+</section>
+
+<section class="card" id="platforms">
+  <h2>Plattformen &amp; Berechtigungen</h2>
+  <div class="grid3">
+    <div class="tile"><h3>YouTube <span class="badge live">aktiv</span></h3>
+      <p>YouTube Data API v3. Berechtigungen: <code>youtube.upload</code> zum Hochladen und <code>youtube.readonly</code>
+      nur, um zu prüfen, dass der richtige Kanal angemeldet ist. Diese App nutzt YouTube API Services.</p></div>
+    <div class="tile"><h3>TikTok <span class="badge plan">geplant</span></h3>
+      <p>TikTok Content Posting API – Hochladen meiner eigenen Clips auf mein eigenes TikTok-Konto (<code>video.upload</code> / <code>video.publish</code>).</p></div>
+    <div class="tile"><h3>Instagram <span class="badge plan">geplant</span></h3>
+      <p>Instagram-API (Content Publishing) – Veröffentlichen meiner eigenen Clips als Reels auf meinem eigenen professionellen Konto.</p></div>
+    <div class="tile"><h3>Twitch <span class="badge plan">geplant</span></h3>
+      <p>Twitch-API – beschränkt auf die Verwaltung von Clips und Videos auf meinem eigenen Kanal. Twitch bietet keinen Video-Upload per API.</p></div>
+  </div>
+</section>
+
+<section class="card" id="data">
+  <h2>Deine Daten auf einen Blick</h2>
+  <p>Die App speichert nur den Anmelde-Token je verbundenem Konto, und zwar lokal auf meinem Computer. Videos und
+  ihre Texte gehen direkt an die Plattform, auf die ich hochlade. Einzelheiten stehen in der
+  <a href="../de/datenschutz.html">Datenschutzerklärung</a>; wie Zugriff und Daten entfernt werden, steht unter
+  <a href="../de/datenloeschung.html">Datenlöschung</a>. Fragen? <a href="../de/kontakt.html">Kontakt</a>.</p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="bar">
+    <nav class="site-nav" aria-label="Footer"><ul><li><a href="../de/" aria-current="page">Start</a></li><li><a href="../de/datenschutz.html">Datenschutz</a></li><li><a href="../de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li><li><a href="../de/datenloeschung.html">Datenlöschung</a></li><li><a href="../de/kontakt.html">Kontakt</a></li><li><a class="lang" href="../" hreflang="en" lang="en" title="English">EN</a></li></ul></nav>
+    <p class="small">© 2026 vBADBULLv · <a href="mailto:vbadbullv@gmail.com">vbadbullv@gmail.com</a> · <a href="https://github.com/vBADBULLv/vbadbullv">Quellcode dieser Website</a></p>
+    <p class="small">vBADBULLv ist ein privates, nicht-kommerzielles Projekt. Es steht in keiner Verbindung zu YouTube, Google, TikTok, Meta, Instagram, Twitch oder einem Spielepublisher und wird von diesen weder unterstützt noch gesponsert. Alle Marken gehören ihren jeweiligen Inhabern.</p>
+  </div>
+</footer>
+</body>
+</html>

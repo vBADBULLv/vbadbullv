@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vBADBULLv – Clip uploader for my own gameplay channels</title>
+<meta name="description" content="vBADBULLv is a personal tool that uploads my own gameplay clips to my own YouTube, TikTok, Instagram and Twitch accounts.">
+<link rel="canonical" href="https://vbadbullv.github.io/vbadbullv/">
+<link rel="alternate" hreflang="en" href="https://vbadbullv.github.io/vbadbullv/">
+<link rel="alternate" hreflang="de" href="https://vbadbullv.github.io/vbadbullv/de/">
+<link rel="alternate" hreflang="x-default" href="https://vbadbullv.github.io/vbadbullv/">
+<meta property="og:title" content="vBADBULLv – Clip uploader for my own gameplay channels">
+<meta property="og:description" content="vBADBULLv is a personal tool that uploads my own gameplay clips to my own YouTube, TikTok, Instagram and Twitch accounts.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vbadbullv.github.io/vbadbullv/">
+<meta property="og:image" content="https://vbadbullv.github.io/vbadbullv/assets/icon-1024.png">
+<meta name="theme-color" content="#0f0224">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-1024.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="scene" aria-hidden="true">
+  <div class="stars"></div><div class="sun"></div><div class="floor"></div><div class="horizon"></div>
+  <img class="palm l1" src="assets/palm.svg" alt=""><img class="palm l2" src="assets/palm.svg" alt="">
+  <img class="palm r1" src="assets/palm.svg" alt=""><img class="palm r2" src="assets/palm.svg" alt="">
+</div>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="./"><span>v</span>BADBULL<span>v</span></a>
+    <nav class="site-nav" aria-label="Main"><ul><li><a href="./" aria-current="page">Home</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="data-deletion.html">Data Deletion</a></li><li><a href="contact.html">Contact</a></li><li><a class="lang" href="de/" hreflang="de" lang="de" title="Deutsch">DE</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <h1><span>v</span>BADBULL<span>v</span></h1>
+  <p class="tag">Clip uploader for my own gameplay channels</p>
+  <p class="lead">vBADBULLv is a small personal desktop tool. It takes gameplay clips I recorded myself and uploads
+  them – with title, description, tags and visibility – to <strong>my own</strong> channels and accounts, using each
+  platform's official API and official sign-in.</p>
+  <div class="buttons">
+    <a class="btn btn-pink" href="privacy.html">Privacy Policy</a>
+    <a class="btn btn-ghost" href="terms.html">Terms of Service</a>
+    <a class="btn btn-ghost" href="data-deletion.html">Data Deletion</a>
+  </div>
+</section>
+
+<section class="card" id="about">
+  <h2>What is vBADBULLv?</h2>
+  <p>vBADBULLv is the name of my creator channels and of the small app I built to publish to them. The app runs
+  locally on my own computer. It is <strong>not</strong> a public service: there is no sign-up, no user accounts,
+  no server and no database. It is used only by me, the operator, to upload my own content to my own accounts.</p>
+  <ul class="check">
+    <li>Uploads video files I choose, with the title, description, tags and visibility I set (default: <em>private</em>).</li>
+    <li>Signs in only through the platform's own official login page (OAuth) – the app never sees passwords.</li>
+    <li>Never reads comments, messages, followers, analytics or anyone else's data.</li>
+    <li>No ads, no tracking, no selling or sharing of data.</li>
+  </ul>
+</section>
+
+<section class="card" id="how">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Record</strong><br>I record a gameplay clip on my PC.</li>
+    <li><strong>Describe</strong><br>I start the tool and enter title, description, tags and visibility.</li>
+    <li><strong>Sign in once</strong><br>The platform's official login opens in the browser. The access token is stored only on my computer.</li>
+    <li><strong>Upload</strong><br>The tool sends the video directly to the platform's official API – nothing goes anywhere else.</li>
+  </ol>
+</section>
+
+<section class="card" id="platforms">
+  <h2>Platforms &amp; permissions</h2>
+  <div class="grid3">
+    <div class="tile"><h3>YouTube <span class="badge live">active</span></h3>
+      <p>YouTube Data API v3. Permissions: <code>youtube.upload</code> to upload videos and <code>youtube.readonly</code>
+      only to confirm that the correct channel is signed in. This app uses YouTube API Services.</p></div>
+    <div class="tile"><h3>TikTok <span class="badge plan">planned</span></h3>
+      <p>TikTok Content Posting API – uploading my own clips to my own TikTok account (<code>video.upload</code> / <code>video.publish</code>).</p></div>
+    <div class="tile"><h3>Instagram <span class="badge plan">planned</span></h3>
+      <p>Instagram API content publishing – posting my own clips as Reels to my own professional account.</p></div>
+    <div class="tile"><h3>Twitch <span class="badge plan">planned</span></h3>
+      <p>Twitch API – limited to managing clips and videos on my own channel. Twitch does not offer video uploads via API.</p></div>
+  </div>
+</section>
+
+<section class="card" id="data">
+  <h2>Your data at a glance</h2>
+  <p>The only data the app keeps is the sign-in token for each connected account, stored locally on my computer.
+  Videos and their texts are sent directly to the platform I upload to. Details are in the
+  <a href="privacy.html">Privacy Policy</a>; how to remove access and data is explained on the
+  <a href="data-deletion.html">Data Deletion</a> page. Questions? <a href="contact.html">Contact</a> me.</p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="bar">
+    <nav class="site-nav" aria-label="Footer"><ul><li><a href="./" aria-current="page">Home</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="data-deletion.html">Data Deletion</a></li><li><a href="contact.html">Contact</a></li><li><a class="lang" href="de/" hreflang="de" lang="de" title="Deutsch">DE</a></li></ul></nav>
+    <p class="small">© 2026 vBADBULLv · <a href="mailto:vbadbullv@gmail.com">vbadbullv@gmail.com</a> · <a href="https://github.com/vBADBULLv/vbadbullv">Source code of this website</a></p>
+    <p class="small">vBADBULLv is a personal, non-commercial project. It is not affiliated with, endorsed or sponsored by YouTube, Google, TikTok, Meta, Instagram, Twitch or any game publisher. All trademarks belong to their respective owners.</p>
+  </div>
+</footer>
+</body>
+</html>
